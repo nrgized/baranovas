@@ -4,12 +4,18 @@
   font-family: 'Neris-SemiBold';
   src: url('/styles/fonts/Neris-SemiBold-webfont.eot'); /* IE9 Compat Modes */
   src: url('/styles/fonts/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/styles/fonts/Neris-SemiBold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
        url('/styles/fonts/Neris-SemiBold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('/styles/fonts/Neris-SemiBold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('/styles/fonts/Neris-SemiBold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
+@font-face {
+font-family: 'Neris';
+  src: url('/styles/fonts/Neris-Light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/styles/fonts/Neris-Light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/styles/fonts/Neris-Light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/styles/fonts/Neris-Light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/styles/fonts/Neris-Light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -36,6 +42,10 @@ h3 {
 }
 h4 {
   font-size: 1em;  
+}
+
+p {
+  font-family: Neris;
 }
 
 /* Space out content a bit */
@@ -107,14 +117,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
 .landingTextBox h3 {
   display: inline-block;
 }
+
+.landingTextBox a h3 {
+  color: rgba(255,255,255,1);
+} 
+
 .landingTextBox span {
   display: inline-block;
-  margin: 0 10px 0 0;
-  color: rgba(255,255,255,1);
-  border-style: solid;
-  border-radius: 50%;
-  border-width: 1px;
   padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url(/images/image-sprite.png) no-repeat -5px -250px;
+  vertical-align: middle;
+  margin-right: 0.6em;
 }
 
 
@@ -141,7 +157,75 @@ p {
 
 .projectsSection {
   background: rgba(235,65,45,1);
-  height: 500px;
+  height: 100%;
+}
+.projectsSection h2 {
+  color: rgba(255,255,255,1);  
+  margin: 50px 0 0 25px;
+}
+.projectsSection h2::first-letter {
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255,255,255,1);
+  border-bottom-width: 3px;
+}
+
+#slider .item {
+  min-height: 375px;
+}
+a.next, a.prev {
+  position: absolute;  
+  top: 45%;
+  cursor: pointer;
+  margin: auto 25px;
+}
+
+a.next {
+  right: -60px;
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;  
+  border-left: 30px solid rgba(255,255,255,0.3);
+}
+
+a.prev {
+  left: -60px;
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;  
+  border-right: 30px solid rgba(255,255,255,0.3);
+}
+
+.item {
+  /* border: solid 1px black;*/
+}
+.item h3 {
+  color: rgba(255,255,255,1);
+  font-family: Neris;
+}
+.item .text-muted {
+  margin-top: -5px;
+  font-family: Neris;
+  font-size: 1em;
+  color: rgba(0,0,0,1);
+}
+.item .text-description {
+  font-family: Neris;
+  font-size: 1em;  
+  color: #F5A298;
+  line-height: 1.5em;
+  text-align: left;
+  width: 78%;
+  margin: 1em 0;
+
+}
+.imgContainer {
+  background: rgb(150,150,150);   
+}
+
+.slick-slide img {
+  opacity:  0.85;
 }
 
 

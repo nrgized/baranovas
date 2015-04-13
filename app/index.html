@@ -10,6 +10,8 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -30,12 +32,12 @@
       <button id="menu" class="pull-right cmn-toggle-switch cmn-toggle-switch__htx">
         <span>toggle menu</span>
       </button>
-        <h2>Bweb</h2>
+        <h2>Audrius Baranovas</h2>
       </div>
 
       <div class="landingTextBox">
-        <h1>We make websites and apps that you'll love to have.</h1>
-        <a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a><h3>see what we have done so far</h3>
+        <h1>Building creative & effective websites.</h1>
+        <a href="#" class="link"><span></span><h3>see what I have done so far</h3></a>
       </div>
 
 
@@ -47,8 +49,8 @@
       <div class="row marketing">
         <div class="col-lg-4 col-md-4 col-sm-4 welcome">
           <h2>Welcome!</h2>
-          <p class="text-muted">We implement awesome ideas into full scale Projects.</p>
-          <p class="more"><a href="#"><span class="glyphicon glyphicon-share-alt"></span></a>See our recent projects</p>
+          <p class="text-muted">I implement awesome ideas into full scale Projects.</p>
+          <p class="more"><a href="#"><span class="glyphicon glyphicon-share-alt"></span>See my recent projects</p></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <h3>Colloboration</h3>
@@ -56,16 +58,65 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <h3>Development</h3>
-          <p>We draw from a wide range of business-related disciplines to ensure platforms are scalable for the future.</p>
+          <p>Specialising in JavaScript, Angular, responsive design, and performance</p>
         </div>
       </div>
     </div>
   </section>
   <section class="projectsSection">
     <div class="container">
-      <div class="row marketing">
-      
-      </div>
+        <h2>Latest projects</h2>
+        <div id="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+          <div class="item">
+                <div class="row marketing">
+                  <div class="col-lg-7 col-md-7 col-sm-7">
+                      
+                        <div class="imgContainer">
+                          <img src="/images/servemesprinkles.png" width="100%">
+                        </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-5">
+                    <h3>Serve Me Sprinkles</h3>
+                    <p class="text-muted">webdesign/frontend/backend</p>
+                    <p class="text-description">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+                  </div>
+                </div>
+          </div>
+          <div class="item">
+                <div class="row marketing">
+                  <div class="col-lg-7 col-md-7 col-sm-7">
+                      
+                        <div class="imgContainer">
+                          <img src="/images/ziniucentras.png" width="100%">
+                        </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-5">
+                    <h3>Ziniu Centras</h3>
+                    <p class="text-muted">webdesign/frontend/backend</p>
+                    <p class="text-description">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+                  </div>
+                </div>
+          </div>
+          <div class="item">
+                <div class="row marketing">
+                  <div class="col-lg-7 col-md-7 col-sm-7">
+                      
+                        <div class="imgContainer">
+                          <img src="/images/arnasusavicius.png" width="100%">
+                        </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-5">
+                    <h3>Arnas Usavicius</h3>
+                    <p class="text-muted">webdesign/frontend/backend</p>
+                    <p class="text-description">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+                  </div>
+                </div>
+
+          </div>
+        </div>
     </div>
   </section>
     <div class="container">
@@ -80,6 +131,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/slick.js/slick/slick.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
